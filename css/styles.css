@@ -112,16 +112,31 @@ img {
 .site-nav .item+.item {
     margin-left: 50px;
 }
-.site-nav .header-link{
+.header-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
     color: var(--primary-text-color);
+}
+.header-link:hover,
+.header-link:focus{
+    color: var(--accent-color);
+}
+.header-link.current{
+    color: var(--accent-color);
+}
+
+.header-link.current::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: "";
     display: block;
-}
-.site-nav .header-link:hover,
-.site-nav .header-link:focus{
-    color: var(--accent-color);
-}
-.site-nav .header-link.current{
-    color: var(--accent-color);
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
 }
 
 
