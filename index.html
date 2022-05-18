@@ -39,7 +39,7 @@
             <li class="item">
                 <a class="header-link link" href="">Контакты</a>
             </li>
-            
+
         </ul>
         <!-- main gmail and number -->
         <ul class="auth-nav list">
@@ -69,7 +69,18 @@
 <section class="hero">
     <div class="container">
         <h1 class="decision">Эффективные решения для вашего бизнеса</h1>
-        <button class="services-button" type="button">Заказать услугу</button>
+        <button class="services-button" type="button"data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal-wrapper">
+
+                <button class="modal-btn" data-modal-close>
+                   <svg width="11" height="11">
+                       <use href="./image/icons.svg/sprite.svg#icon-close"></use>
+                   </svg>
+                </button>
+                
+            </div>
+        </div>
     </div>
 </section>
 <!-- section work -->
@@ -464,5 +475,6 @@
             </div>
     </section>
 </footer>
+<scripts src="./js/modal.js"></scripts>
 </body>
 </html>
