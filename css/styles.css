@@ -240,6 +240,27 @@ img {
 .our-job{
     padding-bottom: 94px;
 }
+.our-item{
+    position: relative;
+}
+.our-item .item{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 27px 82px;
+    color: var(--whitecolor);
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
 .work {
     font-size: 36px;
     line-height: 1.16;
