@@ -137,8 +137,6 @@ img {
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
-
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
