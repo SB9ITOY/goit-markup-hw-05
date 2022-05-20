@@ -639,7 +639,6 @@ img {
 }
 .foto-p{
     position: relative;
-
 }
 .foto-p .item{
     content: "";
@@ -659,6 +658,7 @@ img {
     padding: 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
 }
+
 .job-sites{
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
