@@ -209,7 +209,7 @@ img {
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services-button:hover,
@@ -315,8 +315,6 @@ img {
     position: relative;
 }
 .our-item .item{
-    content: "";
-    display: block;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -329,7 +327,6 @@ img {
     font-weight: 700;
     line-height: 16px;
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: var(--whitecolor);
@@ -416,11 +413,11 @@ img {
 }
 .socials-icon{
     fill: var(--clients-logo);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon{
     fill: var(--whitecolor);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* -----------clients block------------ */
 .clients-block{
@@ -451,11 +448,11 @@ img {
     border: 1px solid var(--clients-logo);
     border-radius: 4px;
 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus{
     border-color: var(--accent-color);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon{
     fill: var(--clients-logo);
@@ -605,8 +602,8 @@ img {
     border: none;
     border-radius: 5px;
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -616,7 +613,6 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
     0px 1px 2px rgba(0, 0, 0, 0.08), 
     0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* --------job-list---------- */
 .job-list{
@@ -667,7 +663,8 @@ img {
     position: relative;
     overflow: hidden;
 }
-.foto-job:hover .paragraf{
+.shadow-hover:hover .paragraf,
+.shadow-hover:focus .paragraf{
     transform: translateY(0);
 }
 .paragraf{
